@@ -4,7 +4,7 @@ export const getFinalDataByDay = ( data ) => {
     const finalDaysData = new Promise((resolve, reject) => {
         const newDayData = {}
         data.forEach( (element,index) => {
-            const date = format(new Date(element.dt_txt), 'MM-dd-yyyy')
+            const date = format(new Date(element.dt_txt), 'MM/dd/yyyy')
             const {main: {temp_min,temp_max}} = element
 
             if ( !newDayData[date] ) newDayData[date]= {'temp_min':[],'temp_max':[]}
