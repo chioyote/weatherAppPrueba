@@ -26,13 +26,12 @@ export const WeatherByCountry = ( {weatherData} ) => {
                 <h2>{display}</h2>
                 <span>{state}, {country}</span>
             </div>
-            <div className="list__country--data">
+            <div className={`list__country--data`}>
                 {   
-                    // weatherList && console.log(Object.keys(weatherList))
                     weatherList &&
                     Object.keys(weatherList).map( item => {
                         const uniqueId = `${id}-${item}`
-                        return <WeatherCard key={uniqueId} date={item} dayData={weatherList[item]} />
+                        return <WeatherCard key={uniqueId} date={item} dayData={weatherList[item]} cardCount={Object.keys(weatherList).length}/>
                     })
                 }
             </div>

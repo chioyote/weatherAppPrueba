@@ -30,7 +30,7 @@ export const getWeather = ( locations = [] ) => {
                 
             } catch (error) {
                 console.log(error)
-                return
+                return error
             }
 
             weatherData.push(thisData)

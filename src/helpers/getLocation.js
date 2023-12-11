@@ -10,6 +10,6 @@ export const getLocation = async ( searchParam ) => {
         return response.data
     } catch (error) {
         console.log(error.message)
-        return
+        return error
     }
 }

@@ -27,12 +27,11 @@
     }
     &--card{
         padding: 25px 0;
-        width: calc(100% / 6);
         @media (min-width: 560px) and (max-width: 769px) {
-            width: calc(100% / 3);
+            width: calc(100% / 3)!important;
         }
         @media (max-width: 559px) {
-            width: calc(100% / 2);
+            width: calc(100% / 2)!important;
         }
     }
 }

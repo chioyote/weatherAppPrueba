@@ -21,7 +21,6 @@ export const Dayslist = () => {
     }
     return (
         <div>
-            {console.log(weatherData)}
             { weatherKeys &&
                 weatherData.map( item => (
                     <WeatherByCountry key={item.id} weatherData={item}/>

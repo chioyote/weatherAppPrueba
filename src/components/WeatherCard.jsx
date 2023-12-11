@@ -4,7 +4,7 @@ import { format, isSameDay } from "date-fns"
 
 import '~/components/WeatherCard.scss'
 
-export const WeatherCard = ( {dayData, date} ) => {
+export const WeatherCard = ( {dayData, date, cardCount} ) => {
     const { temp_max, temp_min } = dayData
     const formatDate = format(new Date( date ), 'dd/MM/yyyy')
 
@@ -14,9 +14,9 @@ export const WeatherCard = ( {dayData, date} ) => {
     const maxTemp = temp_max.reduce(function (prevTemp, currentTemp) {
         return Math.max(prevTemp, currentTemp);
     });
-    
+
     return (
-        <div className={`list__country--card`}>
+        <div className={`list__country--card`} style={{width: `calc(100%/${cardCount})`}}>
             <span className={`list__country--card-date`}>{formatDate}</span>
             <div className={`list__country--card-data hot`}>
                 <span>{minTemp} <sup>°C</sup></span>
