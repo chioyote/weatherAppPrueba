@@ -1,0 +1,12 @@
+@import "../variables.scss";
+.empty-state{
+    text-align: center;
+    margin: 90px auto;
+    color: rgba($darkPrimary,.5);
+    span{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 40px;
+        color: $text;
+    }
+}

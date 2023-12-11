@@ -1,0 +1,47 @@
+// Colors
+$primaryBlue: #418BA6;
+$secondary: #E68620;
+$darkPrimary: #204654;
+$text: #736D67;
+$black: #000000;
+$error: #d23333;
+$warning: #ffcc41;
+$hotColor: #E50404;
+$coldColor: #2FA7E6;
+$mainCOlor:#713DA8;
+
+
+//fontFamily
+$fontFamily: 'Inter', sans-serif;
+
+// font size
+$fontSize: (
+    'small': .85rem,
+    'base': 1rem,
+    'large': 1.25rem,
+    'xlarge': 1.5rem,
+    '2xlarge': 1.9rem,
+    '3xlarge': 2.5rem
+);
+
+// Breakpoints
+
+$breakpoints: (
+    'xlarge': "(min-width: 1360px)",
+    'large': "(min-width: 1024px)",
+    'medium': "(min-width: 600px) and (max-width: 1023px)",
+    'small': "(max-width: 599px)" 
+);
+
+$specialBreakpoints: (
+    'maxMedium': '(max-width: 1023px)'
+);
+
+//Columns
+$columns: (
+    'xlarge': 4,
+    'large': 3,
+    'medium': 2,
+    'small': 1 
+)
+

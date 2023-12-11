@@ -1,0 +1,43 @@
+@import "../variables.scss";
+@import '../mixins.scss';
+.list__country--card{
+    text-align: center;
+    &:nth-child(odd) {
+        background: #f8f7f7;
+    }
+    &:nth-child(even) {
+        background: #f2f2f2;
+    }
+    &-date{
+        display: block;
+        margin-bottom: 15px;
+        font-size: .9rem;
+        color: $text;
+    }
+    &-data{
+        width: 100px;
+        margin: 0 auto 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: right;
+        justify-content: center;
+        & > span{
+            width: 80px;
+            text-align: left;
+        }
+        sup{
+            font-size: .6rem;
+        }
+        &.hot{
+            svg{
+                color: $hotColor;
+            }
+        }
+        &.cold{
+            svg{
+                color: $coldColor;
+            }
+        }
+    }
+}
